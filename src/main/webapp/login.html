@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+    <head>
+
+        <title> Online Banking </title>
+        <meta charset="UTF-8"> <!-- HTML5 charset -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="javascript/base.js"></script>
+        <script src="javascript/login.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <a class="navbar-brand" href="index.html">Online Banking</a>
+        </nav>
+
+        <div class="mx-auto w-50" style="margin-top:6%">
+            <h5 class="text-center">Please sign in</h5>
+            <div class="form-group">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="credentials">Credentials</label>
+                <input type="password" name="credentials" class="form-control" placeholder="Enter credentials" id="credentials">
+                <h6 style="visibility:hidden" id="invalid" class="text-danger"><small>Invalid email/credentials</small></h6>
+            </div>
+            <input type="submit" id="loginButton" class="btn btn-secondary btn-block" style="margin-top:3%" value="OK">
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+    <head>
+
+        <title> Online Banking </title>
+        <meta charset="UTF-8"> <!-- HTML5 charset -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="javascript/base.js"></script>
+        <script src="javascript/signup.js"></script>
+
+
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <a class="navbar-brand" href="index.html">Online Banking</a>
+        </nav>
+
+        <div class="mx-auto w-50" style="margin-top:6%" id='newClientDiv'>
+            <h5 class="text-center">New Client</h5>
+            
+                              
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" placeholder="Enter your address" id="address" name="address" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input  type="email" class="form-control" placeholder="Enter your email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="credentials">Credentials</label>
+                    <input type="password" class="form-control" placeholder="Enter your credentials" id="credentials" name="credentials">
+                    <h6><small>Only numbers</small></h6>
+                </div>
+                
+               
+                <button type="submit" id="signupButton" class="btn btn-secondary btn-block" style="margin-top:3%;">OK</button>
+                <br>
+                <h6 id="warning"> </h6>
+                
+
+        </div>
+
+
+
+</body>
+
+</html>
